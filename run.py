@@ -9,13 +9,10 @@ from hangman_picture import stages
 def user_name_input():
     """
     Function that asks user for their name and greets them to the game,
-    additionally limits the lenght of the name to 23 characters.
-    Info: Any character is allowed in case one wants to use their
-    username instead of real name - or X Æ A-12 Musk (Son of Elon Musk)
-    would like to play.
+    additionally limits the lenght of the name to 25 characters.
     """
     name = input("\nPlease enter your name: \n")
-    while len(name) <= 23:
+    while len(name) <= 25:
         if len(name) > 0:
             break
         else:
@@ -30,7 +27,7 @@ def user_name_input():
         clear()
         return user_name_input()
 
-    print("-" * 23)
+    print("-" * 25)
     print(f"\nHello {name} and welcome to Hangman Game\n")
     time.sleep(3)
     clear()
@@ -133,7 +130,7 @@ def main():
                     print(stages[lives])
                     print("You are out of lives!")
                     print(f"The word was: {chosen_word}.")
-                    print("You lose. Good luck next time!")
+                    print("You lost the Game. Better luck next time!")
             else:
                 for position in range(word_length):
                     letter = chosen_word[position]
@@ -147,7 +144,7 @@ def main():
                 print(stages[lives])
                 print("You got it!")
                 print(f"The word was: {chosen_word}.")
-                print("You win! Great job!")
+                print("You won !! Great job!")
 
         while True:
             play_again = input("Do you want to play again? Y or N: ").lower()
@@ -156,7 +153,7 @@ def main():
             elif play_again == 'y':
                 main()
             else:
-                print("Thank you for playing Hangman. Goodbye!")
+                print("Thank you for playing Hangman.Have a Good day!")
                 return
 main()
 
