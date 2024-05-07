@@ -4,7 +4,7 @@ import os
 import time
 
 from words import wordlist
-from hangman_picture import stages
+from hangman_picture import stages, logo
 
 def user_name_input():
     """
@@ -39,6 +39,7 @@ def get_menu():
     Displays the memu and returns the user options.
     """
     clear()
+    print(logo)
     print("Welcome to the Hangman Game!!!")
     print("Main Menu:")
     print("1.Start New Game")
@@ -61,11 +62,11 @@ def  How_to_play():
     Displays the game instructions & how to play.
     """
     clear()
-    print("\nHangman is a word-guessing game where you have"
-          " to guess a hidden word letter by letter.")
-    print("You can make a limited number of incorrect guesses"
-          " before the hangman is complete.")
-    print("Your goal is to guess the word before the hangman is fully drawn.")
+    print(logo)
+    print("\nHangman is a word-guessing game where you have to guess a hidden word letter by letter.\n")
+    print("If you guess correctly the letters will be shown in their appropriate place.\n")
+    print("You can make a limited number of incorrect guesses before the hangman is complete.\n")
+    print("Your goal is to guess the word before the hangman is fully drawn.\n")
     print("Good luck!\n")
     input("Press ENTER to continue")
     
