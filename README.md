@@ -21,18 +21,24 @@ Hangman game is a word guessing game in which you must guess words before the ha
 ### As a first time user
 
 - I want to be able to know the rules of the game.
+- Quickly understand the concept and rules of the game, even if I've never played Hangman before.
 - I want to be able to play a fun, interactive game that will entertain me.
 - I want the game to show my progress in the game either by winning or losing.
 - I want a warning message to appear on the screen if I accidentally enter an invalid  
   character, number or just repeat the letter I used already.
+- Easily navigate the game's main menu and options.
+  Know how to start a new game or access any additional features.
 - I want to be able to display correct word if i failed to guess the word.
 - I want to be able to have the option to play again or not.
 
 ### As a Returning user
 
 - I want the site to be compatible to different devices in times i want to play.
+- Easily pick up where I left off in any ongoing games from my previous visit.
+- Continue improving my word-guessing skills and enjoy the sense of progress and accomplishment.
 - I want to experience a refreshed and randomized order of questions in each game to prevent memorising and manitain the element of surprise.
 - I would like to have the option of choosing a variety of quizzes in different subject areas.
+- Be motivated to return to the game and continue my Hangman adventure.
 
 ## How To Play
 
@@ -44,12 +50,20 @@ Word Completion: Your goal is to reveal the entire word before the hangman figur
 
 Strategy and Skill: Use your knowledge of words, common letters, and the context of the game to make educated guesses. Every incorrect guess brings you closer to the hangman's completion!
 
-### Are You Up for the Challenge?
+### Hangman Rules:
 
-Hangman is a game that tests your vocabulary and word recognition skills while providing hours of fun and entertainment. Whether you're a word wizard or just looking for a fun way to pass the time, Hangman is the perfect choice. So, what are you waiting for? Start a new game and see if you can outsmart the hangman! Good luck!
+You have a set number of attempts to guess the word correctly.
+For each incorrect letter guess, a part of the hangman (a stick figure) is drawn.
+The game is over if the hangman figure is fully drawn before you guess the word.
+You win the game if you guess the word before the hangman is complete.
 
-### As a first-time visitor to the Hangman game, I want to:
 
-1. Learn About the Game:
+### Are Yor Ready For The Challenge?
 
-    Quickly understand the concept and rules of the game, even if I've never played Hangman before.
+Hangman is a game that tests your vocabulary and word recognition skills while providing hours of fun and entertainment. Whether you're a word wizard or just looking for a fun way to pass the time, Hangman is the perfect choice. So, what are you waiting for? Start a new game!! Good luck!!!
+
+## Game Features
+
+1. Game Starting Page
+
+![Game Starting Page]()
