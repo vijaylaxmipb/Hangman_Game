@@ -66,4 +66,31 @@ Hangman is a game that tests your vocabulary and word recognition skills while p
 
 1. Game Starting Page
 
-![Game Starting Page]()
+![Game Starting Page](images/Game%20starting%20page%20.PNG)
+
+2. Enter User Name
+
+![Enter User Name](images/name_input_page.PNG)
+
+3.Playing Game Page
+
+![Playing Game Page](images/hangman-start-page.PNG)
+
+4.How To Play
+![How to play section](images/how-to-play-page.PNG)
+
+5.Winning Page
+![Winning Page](images/winning_page.PNG)
+
+6.Numbers
+![Does Not Accept Number](images/number.PNG)
+
+7.Special & Other Character
+![Accepts only one alphabet at a time](images/other_letter.PNG)
+
+8.Exit Screen
+![Exit Screen](images/exit_page.PNG)
+
+## Flowchart
+
+![Flowchart FOr Hnagman Game]

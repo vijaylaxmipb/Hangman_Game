@@ -129,7 +129,7 @@ def main():
                 current_message = f"You've already guessed {guess}"
             elif guess not in chosen_word:
                 lives -= 1
-                current_message = ("You guessed {guess}, that's not in the word. "
+                current_message = (f"You guessed: {guess}, that's not in the word. "
                                    "You lose a life.")
                 if lives == 0:
                     end_of_game = True
