@@ -93,4 +93,21 @@ Hangman is a game that tests your vocabulary and word recognition skills while p
 
 ## Flowchart
 
-![Flowchart FOr Hnagman Game]
+![Flowchart FOr Hnagman Game](images/Flowchart.PNG)
+
+## Languages used
+
+* [Python](https://www.python.org/): the main language used to create the game.
+
+## Testing
+
+- Passes the code through a PEP8 linter and there were few minor errors.
+- Given invalid inputs:numbers & special characters when strings are expected,out of bounds inputs,same input twice.
+- Tested in my local terminal and the Code Institute terminal.
+
+## Bugs
+
+Ran the code through PEP8 linter, but i was getting few errors. Most of them were space, tabs, and line too long and trailing whitespace. I was able to fix these erorrs. 
+
+![Errors Image](images/python_linter_bugs.PNG)
+

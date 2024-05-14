@@ -54,7 +54,7 @@ def get_menu():
             print("Invalid input! Enter your choice (1/2/3):")
             continue
         return choice         
-            
+
 
 def how_to_play():
     """
@@ -72,7 +72,7 @@ def how_to_play():
           "is fully drawn.\n")
     print("Good luck!\n")
     input("Press ENTER to continue")
-    
+
 
 def clear():
     """
@@ -165,6 +165,3 @@ def main():
 
 
 main()
-
-
-
