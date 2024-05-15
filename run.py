@@ -1,4 +1,4 @@
-import string
+""" Imports random, os and time for hangman """
 import random
 import os
 import time
@@ -12,18 +12,18 @@ def user_name_input():
     Function that asks user for their name and greets them to the game,
     additionally limits the length of the name to 25 characters.
     """
-    name = input("\nPlease enter your name: \n")
+    name = input("\nPlease enter your name: \n").strip()
     while len(name) > 25:
         print("\nYour name is too long for this program.")
         print("Please make it shorter.\n")
         time.sleep(1)
         clear()
-        name = input("\nPlease enter your name: \n")
+        name = input("\nPlease enter your name: \n").strip()
     while len(name) == 0:
         print("You must enter a name.")
         time.sleep(1)
         clear()
-        name = input("\nPlease enter your name: \n")
+        name = input("\nPlease enter your name: \n").strip()
 
     print("-" * 25)
     print(f"\nHello {name} and welcome to Hangman Game\n")
@@ -44,14 +44,14 @@ def get_menu():
     print("2.How To Play")
     print("3.Exit")
     while True:
-        choice = input("Enter your choice (1/2/3): ")
+        choice = input("Enter your choice (1/2/3): ").strip()
         try:
             choice = int(choice)
             if choice > 3 or choice < 1:
-                print("Invalid input! Enter your choice (1/2/3):")
+                print("Invalid input! Enter your choice (1/2/3):").strip()
                 continue
         except ValueError:
-            print("Invalid input! Enter your choice (1/2/3):")
+            print("Invalid input! Enter your choice (1/2/3):").strip()
             continue
         return choice         
 
@@ -102,8 +102,11 @@ def display_part(lives, guesses, message):
             return guess
 
 
-def main():
-    name = user_name_input()  # Call user_name_input() to get the user's name
+def main(name=''):
+    """
+    Main function for executing the Hangman game.
+    if player's name not provided, it will prompt the user for input.
+    """
     chosen_word = random.choice(wordlist)
     word_length = len(chosen_word)
 
@@ -119,6 +122,8 @@ def main():
         how_to_play()
         main()
     else:
+        if name == '':
+            name = user_name_input()  # Call method to get user's name
         display = ["_" for _ in range(word_length)]
         current_guesses = []
         current_message = ''
@@ -149,19 +154,19 @@ def main():
                 end_of_game = True
                 clear()
                 print(stages[lives])
-                print("You got it!")
+                print(f"{name}, You got it!")
                 print(f"The word was: {chosen_word}.")
                 print("You won !! Great job!")
 
         while True:
-            play_again = input("Do you want to play again? Y or N: ").lower()
+            play_again = input("play again? Y or N: ").lower().strip()
             if play_again not in ["y", "n"]:
                 print("Invalid input!")
             elif play_again == 'y':
-                main()
+                main(name)
             else:
                 print("Thank you for playing Hangman. Have a Good day!")
-                return
+                exit()
 
 
 main()
