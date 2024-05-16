@@ -53,7 +53,7 @@ def get_menu():
         except ValueError:
             print("Invalid input! Enter your choice (1/2/3):").strip()
             continue
-        return choice         
+        return choice
 
 
 def how_to_play():
@@ -76,7 +76,7 @@ def how_to_play():
 
 def clear():
     """
-    Clears the terminal 
+    Clears the terminal
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -134,8 +134,8 @@ def main(name=''):
                 current_message = f"You've already guessed {guess}"
             elif guess not in chosen_word:
                 lives -= 1
-                current_message = (f"You guessed: {guess}, that's not in the word. "
-                                   "You lose a life.")
+                current_message = (f"You guessed: {guess}, it's not in the "
+                                   "word. You lose a life.")
                 if lives == 0:
                     end_of_game = True
                     clear()
@@ -170,3 +170,4 @@ def main(name=''):
 
 
 main()
+

@@ -111,3 +111,46 @@ Ran the code through PEP8 linter, but i was getting few errors. Most of them wer
 
 ![Errors Image](images/python_linter_bugs.PNG)
 
+## Validation
+
+- PEP8 
+   - No errors were returned from PEP8onine.com
+
+1. Python Run.py Report
+
+![Run](images/python_resolved_bugs.PNG)
+
+2. Python Words.py Report
+
+![Words](images/python_linter_words.PNG)
+
+3. Python Hangman_picture.py Report
+
+![Picture](images/python_linter_picture.PNG)
+
+## Deployment 
+
+This website was coded in gitpod and deployed on [Heroku](https://id.heroku.com/login)
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+- Steps for deployment:
+   - Fork or clone this repository
+   - Log in to Heroku and click "New" and "Create new app"
+   - Name the new app and click "Create new app".
+   - While still in "Settings", click "Reveal Config Vars" and add the following; KEY: PORT, VALUE: 8000. and content from creds.json file
+   - Click on "Deploy" and select your deploy method and search for the repository name.
+   - Click "Connect" on a selected repository.
+   - Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section.
+   - Heroku will now deploy the app.
+
+##  Credits & Acknowledgements
+
+- Code Institute for the deployement terminal.
+- I would like to thank my Mentor Spencer Barriball for his guidance on making this project, he helped me provide guidance on features 
+  for my Hangman Game project and pointed me to the right direction.
+- [MJcodes]https://www.youtube.com/@mjcodes4071) for the ideas and how to start the project.
+- [Apna College](https://www.youtube.com/@ApnaCollegeOfficial) for the Python concepts to understand.
+
+
+
