@@ -104,10 +104,12 @@ Hangman is a game that tests your vocabulary and word recognition skills while p
 - Passes the code through a PEP8 linter and there were few minor errors.
 - Given invalid inputs:numbers & special characters when strings are expected,out of bounds inputs,same input twice.
 - Tested in my local terminal and the Code Institute terminal.
+- Tested Menu input by entering space bar " " it was throwing the error.Fixed the error.
 
 ## Bugs
 
-Ran the code through PEP8 linter, but i was getting few errors. Most of them were space, tabs, and line too long and trailing whitespace. I was able to fix these erorrs. 
+- Ran the code through PEP8 linter, but i was getting few errors. Most of them were space, tabs, and line too long and trailing whitespace. I was able to fix these erorrs. 
+- Tested the menu input section by entering invalid entries ans spaces.Fixed input menu validation to handle spaces and invalid entries.
 
 ![Errors Image](images/python_linter_bugs.PNG)
 
@@ -130,7 +132,7 @@ Ran the code through PEP8 linter, but i was getting few errors. Most of them wer
 
 ## Deployment 
 
-This website was coded in gitpod and deployed on [Heroku](https://id.heroku.com/login)
+This website was coded in gitpod and deployed on [Heroku](https://hangman-game-app-500e6518507f.herokuapp.com/)
 
 This project was deployed using Code Institute's mock terminal for Heroku.
 
