@@ -45,15 +45,10 @@ def get_menu():
     print("3.Exit")
     while True:
         choice = input("Enter your choice (1/2/3): ").strip()
-        try:
-            choice = int(choice)
-            if choice > 3 or choice < 1:
-                print("Invalid input! Enter your choice (1/2/3):").strip()
-                continue
-        except ValueError:
-            print("Invalid input! Enter your choice (1/2/3):").strip()
-            continue
-        return choice
+        if choice in ['1', '2', '3']:
+            return int(choice)
+        else:
+            print("Invalid input! Please enter 1, 2, or 3.")
 
 
 def how_to_play():
