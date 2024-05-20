@@ -140,7 +140,7 @@ def main(name=''):
                     end_of_game = True
                     clear()
                     print(stages[lives])
-                    print("You are out of lives!")
+                    print(f"{name}, you are out of lives!")
                     print(f"The word was: {chosen_word}.")
                     print("You lost the Game. Better luck next time!")
             else:
@@ -154,12 +154,12 @@ def main(name=''):
                 end_of_game = True
                 clear()
                 print(stages[lives])
-                print(f"{name}, You got it!")
+                print(f"{name}, you got it!")
                 print(f"The word was: {chosen_word}.")
                 print("You won !! Great job!")
 
         while True:
-            play_again = input("play again? Y or N: ").lower().strip()
+            play_again = input("Play again? Y or N: ").lower().strip()
             if play_again not in ["y", "n"]:
                 print("Invalid input!")
             elif play_again == 'y':
