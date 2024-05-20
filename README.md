@@ -152,6 +152,7 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 - I would like to thank my Mentor Spencer Barriball for his guidance on making this project, he helped me provide guidance on features 
   for my Hangman Game project and pointed me to the right direction.
 - [MJcodes]https://www.youtube.com/@mjcodes4071) for the ideas and how to start the project.
+- I followed google & chatGPT to resolve the input menu part.
 - [Apna College](https://www.youtube.com/@ApnaCollegeOfficial) for the Python concepts to understand.
 
 
